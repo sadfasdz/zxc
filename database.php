@@ -96,7 +96,7 @@ $SNP = mysqli_fetch_assoc($snp);
 
                 
  -->
-                <input type="text" name="tarif" placeholder="Введите тариф" class = "form__add">
+                <!-- <input type="text" name="tarif" placeholder="Введите тариф" class = "form__add"> -->
 
                 <button class="btn" type="submit">добавить</button>
             </div>
@@ -124,9 +124,9 @@ $SNP = mysqli_fetch_assoc($snp);
                     <th>количество приобретенных аб.</th>
                     <th>количество посещений по аб.</th>
                     <th>осталось посещений по аб.</th>
-                    <th>консультации врача</th>
-                    <th>доп.процедуры</th>
-                    <th>тариф</th>
+                    <!-- <th>консультации врача</th> -->
+                    <!-- <th>доп.процедуры</th> -->
+                    <!-- <th>тариф</th> -->
                 </tr>
                 <?php
                 if (isset($_POST['search'])) {
@@ -149,9 +149,9 @@ $SNP = mysqli_fetch_assoc($snp);
                     <td class="wrap"><?php echo htmlspecialchars($data['totalA']); ?></td>
                     <td class="wrap"><?php echo htmlspecialchars($data['totalV']); ?></td>
                     <td class="wrap"><?php echo htmlspecialchars($data['totalL']); ?></td>
-                    <td class="wrap"><?php echo htmlspecialchars($data['kons']."\r\n".$data['time']); ?></td>
-                    <td class="wrap"><?php echo htmlspecialchars($data['rec']); ?></td>
-                    <td class="wrap"><?php echo htmlspecialchars($data['tarif']); ?></td>
+                    <!-- <td class="wrap"><?php //echo htmlspecialchars($data['kons']."\r\n".$data['time']); ?></td> -->
+                    <!-- <td class="wrap"><?php //echo htmlspecialchars($data['rec']); ?></td> -->
+                    <!-- <td class="wrap"><?php //echo htmlspecialchars($data['tarif']); ?></td> -->
 
 <!--                    <td class="btn btn-up"><a href="update.php?id=--><?//= $data['id'] ?><!--" class="btn">изменить</a></td>-->
                     <td class="td-aqua" ><button class="btnUp open-modal btnStyle" id="btn-openUp">изменить</button>
@@ -164,9 +164,9 @@ $SNP = mysqli_fetch_assoc($snp);
                                     <input type="text" name="name" placeholder="Введите имя" class="form__add" value="<?=$data['name']?>" >
                                     <input type="text" name="patronymic" placeholder="Введите отчество" class="form__add" value="<?=$data['patronymic']?>" >
                                     <input type="tel" name="phon" placeholder="Введите номер телефона" class="form__add" value="<?=$data['phon']?>" >
-                                    <input type="date" name="kons" class="form__add" value="<?=$data['kons']?>" >
-                                    <input type="time" name="time" class="form__add" value="<?=$data['time']?>" >
-                                    <textarea name="rec" placeholder="Введите доп.процедуры" class = "form__add"><?=$data['rec']?></textarea>
+                                    <input type="date" name="kon`s" class="form__add" value="<?=$data['kons']?>" >
+                                   
+                                    <!-- <textarea name="rec" placeholder="Введите доп.процедуры" class = "form__add"><?=$data['rec']?></textarea> -->
                                     <button class="btn" type="submit">Изменить</button>
                                 </div>
                             </form>

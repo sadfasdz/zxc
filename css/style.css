@@ -288,7 +288,8 @@ tr td:last-child {
 }
 
 .header {
-  background-image: url("../img/sol2.jpg");
+  height: 60vh;
+  background-image: url("../img/fon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -340,7 +341,7 @@ tr td:last-child {
 /* Модальное содержание/коробка */
 .modal-form {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 7.6% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 37%;

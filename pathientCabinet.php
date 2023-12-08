@@ -80,7 +80,7 @@ $data = ($SNP);
             <th>количество посещений по аб.</th>
             <th>осталось посещений по аб.</th>
             <th>доп.процедуры</th>
-            <th>консультации врача</th>
+            <!-- <th>консультации врача</th> -->
             <th>тариф</th>
         </tr>
             <tr class="tr">
@@ -88,7 +88,9 @@ $data = ($SNP);
                 <td class="wrap"><?php echo htmlspecialchars($data['totalV']); ?></td>
                 <td class="wrap"><?php echo htmlspecialchars($data['totalL']); ?></td>
                 <td class="wrap"><?php echo htmlspecialchars($data['rec']); ?></td>
-                <td class="wrap"><?php echo htmlspecialchars($data['kons'] . "\r\n" . $data['time']); ?></td>
+                <!-- <td class="wrap">
+                  <?php// echo htmlspecialchars($data['kons'] . "\r\n" . $data['time']); ?>
+              </td> -->
                 <td class="wrap"><?php echo htmlspecialchars($data['tarif']); ?></td>
             </tr>
     </table>
